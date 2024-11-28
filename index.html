@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCG-Inspired Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Glider.js CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/glider-js/glider.min.css"
+  />
+  <!-- Glider.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js"></script>
+  <style>
+    /* Glider styles */
+    .glider-slide {
+      margin: 0 !important; /* No space between slides */
+      padding: 0 !important; /* No padding inside slides */
+    }
+
+    .glider-slide img {
+      width: 100%;          /* Full width for images */
+      height: 700px;        /* Fixed height */
+      object-fit: cover;    /* Ensure proper cropping */
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .glider {
+      padding: 0 !important; /* No padding in the slider container */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-500 text-white py-6">
+    <div class="container mx-auto flex items-center justify-between">
+      <h1 class="text-3xl font-bold">TCG Fusion</h1>
+      <nav class="flex space-x-6">
+        <a href="#whats-new" class="hover:text-gray-300">What's New</a>
+        <a href="#cards" class="hover:text-gray-300">Cards</a>
+        <a href="#decks" class="hover:text-gray-300">Decks</a>
+        <a href="#collections" class="hover:text-gray-300">My Binder</a>
+        <a href="#watch-list" class="hover:text-gray-300">Watchlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- What's New Section -->
+  <section id="whats-new" class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-6">What's New</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white text-gray-900 rounded-lg shadow-lg p-6">
+          <h3 class="font-bold text-xl mb-4">New Cards Released!</h3>
+          <p class="text-gray-700">Check out the latest addition to the card library, featuring the legendary "Shadow Phoenix" and "Lava Titan."</p>
+        </div>
+        <div class="bg-white text-gray-900 rounded-lg shadow-lg p-6">
+          <h3 class="font-bold text-xl mb-4">Upcoming Tournament</h3>
+          <p class="text-gray-700">Join the Winter Clash 2024 and compete with players worldwide for amazing prizes!</p>
+        </div>
+        <div class="bg-white text-gray-900 rounded-lg shadow-lg p-6">
+          <h3 class="font-bold text-xl mb-4">Community Spotlight</h3>
+          <p class="text-gray-700">Check out this month's featured deck: "Dragon Master Combo" by ProPlayer99!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section id="cards" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Explore Cards</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="cards/fire-lioning.jpg" alt="Card Image" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="cards/earth/earth-bearing.jpg" alt="Card Image" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="cards/water-serpenting.jpg" alt="Card Image" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decks Section -->
+  <section id="decks" class="py-16 bg-gray-200">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Decks</h2>
+      <div class="glider-container">
+        <div class="glider">
+          <div>
+            <img src="cards/earth/earth-yakking.jpg" alt="Earth Card 1">
+          </div>
+          <div>
+            <img src="cards/earth/earth-compassing.jpg" alt="Earth Card 2">
+          </div>
+          <div>
+            <img src="cards/earth/earth-giraffing.jpg" alt="Earth Card 3">
+          </div>
+          <div>
+            <img src="cards/earth/earth-hedgehoging.jpg" alt="Earth Card 4">
+          </div>
+          <div>
+            <img src="cards/earth/earth-turtling.jpg" alt="Earth Card 6">
+          </div>
+          <div>
+            <img src="cards/earth/earth-goating.jpg" alt="Earth Card 6">
+          </div>
+          <div>
+            <img src="cards/earth/earth-bearing.jpg" alt="Earth Card 5">
+          </div>
+          <div>
+            <img src="cards/earth/earth-gazelling.jpg" alt="Earth Card 5">
+          </div>
+          <div>
+            <img src="cards/earth/earth-kaing.jpg" alt="Earth Card 5">
+          </div>
+          <div>
+            <img src="cards/earth/earth-hammering.jpg" alt="Earth Card 5">
+          </div>
+          <div>
+            <img src="cards/earth/earth-axing.jpg" alt="Earth Card 5">
+          </div>
+        </div>
+        <button class="glider-prev" aria-label="Previous">«</button>
+        <button class="glider-next" aria-label="Next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trading Section -->
+  <section id="collections" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Trading</h2>
+      <p class="text-center text-gray-600">The trading feature is coming soon. Get ready to trade cards with the community!</p>
+    </div>
+  </section>
+
+  <!-- Watchlist Section -->
+  <section id="watch-list" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Watchlist</h2>
+      <p class="text-center text-gray-600">The watchlist feature is coming soon. Keep an eye on your favorite cards!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 TCG Fusion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Glider.js Initialization -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      new Glider(document.querySelector('.glider'), {
+        slidesToShow: 3, // Show 3 images directly next to each other
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next',
+        },
+      });
+    });
+  </script>
+</body>
+</html>
