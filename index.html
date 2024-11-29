@@ -27,6 +27,20 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    /* Smaller screens: Reduce height for screens smaller than 768px (tablet size) */
+    @media (max-width: 768px) {
+      .glider-slide img {
+        height: 400px;      /* Adjusted fixed height */
+      }
+    }
+
+    /* Even smaller screens: Reduce height further for screens smaller than 480px (mobile size) */
+    @media (max-width: 480px) {
+      .glider-slide img {
+        height: 200px;      /* Adjusted fixed height */
+      }
+    }
+
     .glider {
       padding: 0 !important; /* No padding in the slider container */
     }
